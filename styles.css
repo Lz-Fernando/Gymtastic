@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo-um: #bd00ff;
+    --roxo-dois: #710099;
+    --roxo-tres: #7807a0;
+    --roxo-quatro: #8c0098;
+    --roxo-cinco: #9e00ff;
+    --roxo-seis: #6600ff;
+    --cor-fundo: #ffffff;
+    --cor-footer: #fef7ff;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    font-family: "inter", sans-serif;
+}
+
+@media (max-width: 440px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .logo_imagem {
+        height: 220px;
+    }
+
+    .logo_titulo {
+        height: 75px;
+        z-index: 1;
+        position: absolute;
+        top: 307px;
+    }
+
+    .logo_sombra_titulo {
+        height: 100px;
+        z-index: -1;
+        position: relative;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .login div {
+        gap: 5px;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login p {
+        font-weight: 16px;
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    .login input {
+        border: 3px solid var(--roxo-um);
+        border-radius: 8px;
+        height: 45px;
+        padding-left: 10px;
+    }
+
+    .login_logar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        background-color: var(--roxo-um);
+        height: 45px;
+        width: 50%;
+        border-radius: 8px;
+        color: #ffffff;
+    }
+
+    .login_cadastrar {
+        color: var(--roxo-um);
+    }
+}
