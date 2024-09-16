@@ -176,4 +176,160 @@ body {
     .historico_conteudo_imagem {
         width: 100%;
     }
+
+    /*Medicamentos*/
+
+    .medicamentos {
+        overflow-y: auto;
+        height: 85%;
+        padding: 25px;
+    }
+
+    .medicamentos_titulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .medicamentos_titulo h2 {
+        font-size: 36px;
+        font-weight: 800;
+        color: var(--roxo-um);
+    }
+
+    .medicamentos_secao {
+        display: flex;
+        align-items: center;
+        margin-top: 43px;
+    }
+
+    .medicamentos_secao_conteudo {
+        padding-left: 20px;
+    }
+
+    .medicamentos_secao_conteudo_titulo {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--roxo-tres);
+    }
+
+    .medicamentos_secao_conteudo_descricao {
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .toggle_container{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+    }
+
+    .toggle_switch {
+        background-color: lightgrey;
+        width: 65px;
+        height: 35px;
+        border-radius: 200px;
+        position: relative;
+        transition: 0.2s;
+    }
+
+    .toggle_switch::before {
+        position: absolute;
+        content: '';
+        background-color: var(--cor-fundo);
+        width: 30px;
+        height: 30px;
+        border-radius: 200px;
+        margin: 2.5px;
+        transition: 0.2s;
+    }
+
+    input:checked + .toggle_switch {
+        background-color: var(--roxo-um);
+    }
+
+    input:checked + .toggle_switch::before {
+        transform: translateX(30px);
+    }
+
+    input {
+        display: none;
+    }
+
+    /*Estatisticas*/
+
+    .stats {
+        overflow-y: auto;
+        height: 85%;
+        padding: 25px 30px 0 30px;
+    }
+
+    .stats_inicio {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .stats_inicio_titulo {
+        font-size: 40px;
+        font-weight: 200;
+        width: 100%;
+        text-align: center;
+        border-bottom: 0.5px solid black;
+    }
+
+    .stats_peso {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0 30px 0;
+    }
+    
+    .stats_peso_img {
+        width: 80px;
+    }
+
+    .stats_peso_descricao {
+        padding-top: 5px;
+    }
+
+    .stats_peso_descricao_titulo {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .stats_peso_descricao_valor {
+        font-size: 24px;
+        font-weight: 200;
+    }
+
+    .stats_treino {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .stats_treino_img {
+        width: 80px;
+    }
+
+    .stats_treino_descricao {
+        padding-top: 10px;
+    }
+
+    .stats_treino_descricao_titulo {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .stats_treino_descricao_lista{
+        list-style-type: none;
+        font-size: 24px;
+        font-weight: 200;
+    }
 }
