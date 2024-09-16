@@ -22,14 +22,14 @@
 body {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--cor-fundo);
     font-family: "inter", sans-serif;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
+
+    /*Login*/
+
     .logo {
         display: flex;
         flex-direction: column;
@@ -99,5 +99,81 @@ body {
 
     .login_cadastrar {
         color: var(--roxo-um);
+    }
+
+    /*Header*/
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--cor-footer);
+        height: 8%;
+        width: 100%;
+    }
+
+    .cabecalho_titulo {
+        color: var(--roxo-um);
+        font-size: 1.7em;
+        font-weight: 800;
+    }
+
+    .cabecalho_menu {
+        width: 2em;
+    }
+
+    .cabecalho_usuario {
+        width: 4em;
+    }
+
+    /*Footer*/
+
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 7%;
+        background-color: var(--cor-footer);
+    }
+
+    .rodape_icones {
+        width: 1.5em;
+    }
+
+    /*Home*/
+
+    .historico {
+        overflow-y: auto;
+        height: 85%;
+    }
+
+    .historico_titulo {
+        color: var(--roxo-um);
+        font-size: 48px;
+        font-weight: 800;
+        padding: 25px 25px 0 25px;
+    }
+
+    .historico_conteudo {
+        padding: 25px 25px 15px 25px;
+        width: 100%;
+    }
+
+    .historico_conteudo_titulo {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .historico_conteudo_descricao {
+        font-size: 20px;
+        font-weight: 200;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+
+    .historico_conteudo_imagem {
+        width: 100%;
     }
 }
