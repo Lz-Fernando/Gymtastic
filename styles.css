@@ -79,6 +79,7 @@ body {
     }
 
     .login input {
+        display: flex;
         border: 3px solid var(--roxo-um);
         border-radius: 8px;
         height: 45px;
